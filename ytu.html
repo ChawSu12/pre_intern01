@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+        <title>YTU Home Page</title>
+        <style>
+            .container-fluid{
+               padding-left: 0px;
+               padding-right: 0px;
+                width: 100%;
+            }
+            .header{
+                background-color: gray;
+                height: 40px;
+                font-size: 15px;
+            }
+            .navitem{
+                float: right;
+                margin-right: 100px;
+                padding-top: 10px;
+            }
+            .navitem a{
+                color: white;
+                text-decoration: none;
+            }
+            .logo{
+                height: 130px;
+                margin-left: 100px;
+            }
+            .nav-link{
+                padding: 10px;
+            }
+            .slideshow{
+              background-image: url(http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg);
+              background-repeat: no-repeat;
+              height: 500px;
+            }
+            .mydiv{
+                margin-top: 20px;
+                margin-left: 100px;
+                display: flex;
+                margin-right: 50px;
+            }
+            button{
+                float: right;
+            }
+            .mydiv div{
+                flex: 1;
+                border: 2px solid black;
+                border-radius: 5px;
+                margin-left: 10px;
+                padding: 10px;
+            }
+            .readbtn{
+                float: right;           
+                background-color: #e47a13; 
+                margin-top: 20px;
+                border-radius: 5px;
+                padding: 7px;
+                width: 110px;
+                }
+            .rectormessage{
+                margin-top: 50px;
+                margin-left: 100px;
+                display: flex;
+                margin-right: 50px;
+            } 
+            .rector{
+                width: 100%;
+            }   
+            .rector-img{
+                width: 40%;
+                float: left;
+            }
+            .re-msg{
+                float: right;
+                width: 60%;
+                text-align: justify;
+                margin-left: 20px;
+            }
+            .re_msg h2{
+                color:#e47a13 ;
+                text-align: center;
+               font-weight: bold;
+              }
+              .rector-readbtn{
+                float:right;
+                background-color:#e47a13 ;
+                margin-top: 10px;
+                border-radius: 5px;
+                padding:7px;
+                color:white;
+                width:120px;
+              }
+            .rector-header{
+                margin-top: 50px;
+            }
+            .ytu-event{
+                margin-top: 20px;
+                margin-left: 100px;
+                display: flex;
+                margin-right: 50px;
+            }
+            .rector-header h2{
+                text-align: center;
+                color: #e47a13;
+                font-weight: bold;
+            }
+            .ytu-event div{
+                width: 25%;
+                padding: 10px;
+                flex: 1;
+            }
+            .morebtn{
+                background-color: #e47a13;
+                margin-right: 50px;
+                margin-top: 30px;
+                float: right;
+                border-radius: 5px;
+            }
+            .welcome-header h2{
+                text-align: center;
+                margin-top: 30px;
+                font-weight: bold;
+                color: #e47a13;
+            }
+            .welcome-paragraph{
+                margin-top: 20px;
+                text-align: justify;
+                margin-left: 100px;
+                margin-right: 50px;
+            }
+            .update-new h2{
+                text-align: center;
+                color: #e47a13;
+                font-weight: bold;
+                margin-left: 100px;
+                margin-right: 50px;
+            }
+            .new{
+                margin-top: 20px;
+                display: flex;
+                margin-left: 100px;
+                margin-right: 50px;
+            }
+            .bg-img{
+                margin-top: 30px;
+                background-image: url(http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                height:200px;
+                display: flex;
+               
+            }
+            .bg-img div{
+                flex: 1;
+                text-align: center;
+            }
+            .bg-container{
+                display: flex;
+                margin-left: 100px;
+                margin-right: 50px;
+                height: 100px;
+                margin-top: 30px;
+
+            }
+            .bg-container div{
+                flex: 1;
+                margin-left: 15px;
+                background-color: rgba(22, 27, 83, 0.4);
+            }
+
+            .bg-container h2{
+                color: #e47a13;
+            }
+
+            button{
+                float: right;
+            }
+            
+
+            .footer{
+                display: flex;
+                margin-left: 100px;
+                margin-right: 50px;
+                margin-top: 50px;
+                padding: fixed;
+                height: 400px;
+            }
+            .footer .about , .footer .links, .footer .posts {
+                
+                flex:1;
+                color:white;
+                margin-top: 50px;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: justify;
+                line-height: 2em;
+              }
+              .links li{
+                color:white;
+              }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="header">
+                <nav class="navitem">
+                    <a href="#">Alumini</a>|
+                    <a href="#">Library</a>|
+                    <a href="#">Sign in</a>|
+                    <a href="#">Register</a>
+                </nav>
+            </div>
+                <div class="logo">
+                    <img src="banner.png" class="img">
+                    
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="color:white;" >HOME </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABOUT YTU
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Rector's Message</a>
+                                <a class="dropdown-item" href="#">History </a>
+                              
+                              </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ADMISSION
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Gradurate</a>
+                                <a class="dropdown-item" href="#">Under Gradurate</a>
+                              
+                              </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DEPARTMENT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ACADEMIC</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            NEWS AND EVENTS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            RESEARCH</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CONFERENCES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            INTERNATIONAL AFFAIRS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            GALLERY</a>
+                        </li>
+                    </ul>    
+                    </div>
+                </nav>  
+
+            <div class="body">
+                    <div class="slidshow">
+                    </div>   
+                    
+                        <div class="intro">
+                            <b> <h2 style="text-align: center;">Myanmar's first diploma Programme in Telecommunication lunched</h2></b>
+                            <br>
+                            <p>The new Diploma Programme in Telecommunication between the University of Oulu
+                                and Yangon Technical University (YTU) was lunched on 22 March 2018.
+                                The programme aims to promote the construction of a society of equal opportunitites 
+                                in Myanmar .
+                            </p><br>
+                            
+                        </div>
+                    
+
+                        <div class="mydiv">
+                            <div class="left">
+                                <b><h2>Our Objectives</h2></b><br>
+                                <p>It is envisaged that YTU will become a hightly-prestigious technological centre of 
+                                execellence in teaching and research with a strong commitment to systematically educate and 
+                                train </p><br>
+                                <input type="button" class="readbtn" value="Read More >>"></button>
+                            </div>
+                        
+                            <div class="middle">
+                                <b><h2>Our Missions</h2></b><br>
+                                <p>To educated and train students systematically to become engineers 
+                                    specialists and researchers who can effectively contribute to the building 
+                                    of a moden developed nation.
+                                </p><br>
+                                <input type="button" class="readbtn" value="Read More >>"></button>
+                            </div>
+                        
+                        <div class="right">
+                        <b><h2>Programs</h2></b><br>
+                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book it has survived not only five centuries.But also the leap into electronic 
+                                typesetting.</p><br>
+                                <input type="button" class="readbtn" value="Read More >>"></button>
+                        </div>
+                   </div>
+
+                   
+                    <div class="rectormessage">
+                        <div class="rector-img">
+                            <img src="YTU_Rector.jpg" class="rector">
+                        </div>  
+                        <div class="re-msg">  
+                            <h2>Rector's Messages</h2><br>
+                            <p>Yangon Technological University is one or the best universities 
+                                in Myanmar and only allows admissions of students who gained high mark from the matriculation
+                                examination.A student majorized engineering field is also decided by the marks
+                                he learned throught the matruculation examination.
+                            </p><br>
+                            <input type="button" class="rector-readbtn" value="Read more >>"></button>
+                        </div>
+                    </div>    
+
+                    <div class="rector-header">
+                        <h2>YTU Events</h2>
+                    </div>
+                    <div class="ytu-event">    
+                        <div class="event_img1">
+                            <img src="event_img1.png" style="width:100%;height:100%">
+                        </div>
+                        <div class="event_img2">
+                            <img src="event_img2.jpg" style="width:100%;height:100%">
+                        </div>
+                        <div class="event_img3">
+                            <img src="event_img3.jpg" style="width:100%;height:100%">
+                        </div>
+                        <div class="event_img4">
+                            <img src="event_img4.jpg" style="width:100%;height:100%">
+                        </div>
+                    </div>
+                    <input type="button" class="morebtn" value="More >>"></button>
+
+                    <div class="welcome-header">
+                        <h2>Welcome to YTU</h2>
+                    </div>
+                    <div class="welcome-paragraph">  
+                        <p>Yangon Technological University is one or the best universities 
+                            in Myanmar and only allows admissions of students who gained high mark from the matriculation
+                            examination.A student majorized engineering field is also decided by the marks
+                            he learned throught the matruculation examination.</p>
+                            <input type="button" class="rector-readbtn" value="Read more >>"></button>
+                    </div>
+      
+                     <div class="update-new">
+                         <h2>Updated News</h2>
+                     </div>    
+                    <div class="new">
+                        <div class="group">
+                            <div class="card" style="border-radius: 10px;">
+                                    <img src="event_img2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        Ministry of Education Yangon Technological University
+                                    </div>
+                            </div>  
+                            <div class="card" style="margin-left:30px;border-radius: 10px;">
+                                    <img src="event_img3.jpg" class="card-img-top" alt="..." style="height: 244px;">
+                                    <div class="card-body">
+                                        Myanmar's first Diploma program in Ministry of Education Yangon Technological University
+                                    </div>
+                            </div>
+                             <div class="card" style="margin-left:30px;border-radius: 10px;">
+                                <img src="wwspzp.jpg" class="card-img-top" alt="..."style="height: 244px;">
+                                <div class="card-body">
+                                  7th WWSPZP
+                                </div>
+                              </div>
+                        
+                        </div> 
+                      
+                    </div>
+                    <div class="new mt-3">
+                        <div class="card-group">
+                          <div class="card" style="border-radius: 10px;">
+                            <img src="event_img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                             Ministry of Education in..
+                            </div>
+                          </div>
+                          <div class="card" style="margin-left:30px;border-radius: 10px;">
+                            <img src="event_img3.jpg" class="card-img-top" alt="..." style="height: 244px;">
+                            <div class="card-body">
+                             Myanmar's first Diploma Programme in ...
+                            </div>
+                          </div>
+                          <div class="card" style="margin-left:30px;border-radius: 10px;">
+                            <img src="wwspzp.jpg" class="card-img-top" alt="..."style="height: 244px;">
+                            <div class="card-body">
+                              7th WWSPZP
+                            </div>
+                          </div>
+                        </div>
+                      
+                      </div>
+                    <input type="button" class="morebtn" value="More >>"></button>
+                    <div class="bg-img">
+                        <div class="bg-container">
+                            <div class="border rounded">
+                                <h2>25</h2>
+                                <h4 class="text-white">DEPARTMENT PUBLISHED</h4>
+                            </div>
+                            <div class="border rounded">
+                                <h2>1000</h2>
+                                <h4 class="text-white">PROFESSIONAL LECTURES</h4>
+                            </div>
+                            <div class="border rounded">
+                                <h2>2000</h2>
+                                <h4 class="text-white">STUDENT ENROLLMENT</h4>
+                            </div>
+                        </div>    
+                    </div>
+                       
+            </div>        
+
+            <div class="container-fluid bg-dark">
+                <div class="footer mt-5">
+                    <div class="about">
+                        <h3>ABOUT YTU</h2>
+                        <p>The present Yangon Technological University (Y.T.U) began as the Department of Engineering in 1923 under the Rangoon (Yangon) University. The Engineering Department was situated downtown, on the Bogyoke Aung San street. B.Sc. (Engineering) program in Civil Engineering began in 1924.</p>
+                  
+                        <br>© Yangon Technological University-2020
+                    </div>
+                    <div class="links ml-3">
+                        <h3>OUR LINKS </h2>
+                        <ul>
+                        <li>Home</li>
+                        <li>Architecture</li>
+                        <li>Civil Engineering</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Mining Engineering</li>
+                        <li>Alumini</li>
+                        </ul>
+                  </div>
+                  <div class="posts ml-5">
+                        <h3>RECENT POSTS</h3>
+                        <img src ="postimg1.jpg" class="w-25 h-25 mt-3" style="border:1px solid white;">
+                        <div class="mt-4" style="float: right;margin-right:100px ;line-height: 1em;">
+                            <p>Events Two</p>
+                            <div class="">
+                            <p>November 18, 2019</p>
+                        </div>
+                    </div>
+                    <br>
+                    <img src="postimg2.jpg" class="w-25 h-25 mt-3" style="border:1px solid white;">
+                    <div class="mt-4" style="float: right;margin-right:100px ;line-height: 1em;">
+                        <p>Events One</p>
+                        <div class="">
+                        <p>November 18, 2019</p>
+                    </div>
+                   </div>
+                    
+                </div>    
+                </div>
+             
+                 
+             </div>
+            
+            </div>
+    </body>
+</html>
